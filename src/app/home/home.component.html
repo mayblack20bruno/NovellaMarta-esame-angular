@@ -1,0 +1,29 @@
+<h1>Meteto di tutto il Mondo</h1>
+<img src="\src\assets\Weather-PNG-Photos-1172425234.png" alt="Immagine logo sole e nuvole"><div><br></div>
+
+<div>
+<form class="modulo-ricerca">
+    <h4>Latitudine</h4>
+    <input id="search" type="text" placeholder="Latitudine" required>
+    <h4>Longitudine</h4>
+    <input id="search" type="text" placeholder="Longitudine" required>
+    <br>
+    <br>
+    <input id="submit" type="submit" value="Cerca" >
+</form>
+</div>
+
+<div>
+    <h3 href="">Genova</h3>
+<!--<h3 *ngIf="City.sunrise != null">{{City.sunrise}}</h3>-->
+</div>
+
+<div>
+    <h3 href="">Torino</h3>
+<!--<h3 *ngIf="City.sunrise != null">{{City.sunrise}}</h3>-->
+</div>
+
+<div *ngFor="let show of shows">
+    <br>
+    <a [routerLink]="'/home/dettaglio/'+ show.show.id">{{show.show.id}} </a>
+</div>
