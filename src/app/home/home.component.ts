@@ -8,11 +8,12 @@ import { ApiService } from '../_services/api.service';
 })
 export class HomeComponent implements OnInit {
 
-  shows: any;
+  lat ="" ;
+  lon ="" ;
 
   constructor(private apiService:ApiService) { }
 ngOnInit(): void {
-    
+  
     // this.apiService.getSunriseSunset().subscribe((response:any)=>{
     //   this.shows=response;
     // })

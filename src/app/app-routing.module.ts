@@ -5,7 +5,7 @@ import { DettaglioComponent } from './dettaglio/dettaglio.component';
 
 const routes: Routes = [
   {path: 'home', component: HomeComponent},
-  {path: 'home/dettaglio/:id', component: DettaglioComponent},
+  {path: 'home/dettaglio/:lat/:lon', component: DettaglioComponent},
   {path: '', redirectTo: '/home', pathMatch:'full'}
 ];
 

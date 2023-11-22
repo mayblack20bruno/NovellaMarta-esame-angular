@@ -1,29 +1,53 @@
-<h1>Meteto di tutto il Mondo</h1>
-<img src="\src\assets\Weather-PNG-Photos-1172425234.png" alt="Immagine logo sole e nuvole"><div><br></div>
+<h1 class="titolo text-center">Meteo di tutto il Mondo</h1>
+
+<!-- <img width="100px" src="assets\Weather-PNG-Photos-1172425234.png" alt="Immagine logo sole e nuvole" /> -->
+<br>
 
 <div>
-<form class="modulo-ricerca">
-    <h4>Latitudine</h4>
-    <input id="search" type="text" placeholder="Latitudine" required>
-    <h4>Longitudine</h4>
-    <input id="search" type="text" placeholder="Longitudine" required>
-    <br>
-    <br>
-    <input id="submit" type="submit" value="Cerca" >
-</form>
+    <div class="d-flex justify-content-center">
+        <form>
+            <div class="card">
+                <h4>Latitudine</h4>
+                <input class="cardcolo" [(ngModel)]="lat" name="lat" id="search" type="number" placeholder="Latitudine"
+                    required />
+            </div>
+            <br>
+            <div class="card">
+                <h4>Longitudine</h4>
+                <input class="cardcolo" [(ngModel)]="lon" name="lon" id="search" type="number" placeholder="Longitudine"
+                    required />
+            </div>
+            <br />
+            <button [routerLink]="'dettaglio/' + lat + '/' + lon" class="btncoloprimary">
+                Cerca
+            </button>
+        </form>
+    </div>
+</div>
+<br>
+
+<!-- card per il tempo a limone montagna -->
+<div class="w-100 d-flex justify-content-center">
+<div class="card" style="width: 18rem;">
+    <br />
+    <h5 class="card-title">Limone</h5>
+    <img src="assets\limone.jpg" alt="immagine Limone">
+    <div class="card-body">
+        <p class="card-text">Vuoi sapere se puoi tornare a sciare?</p>
+        <button class="btncolo" [routerLink]="'dettaglio/44.204481/7.576225'">Clicca qui per sciare!</button>
+    </div>
 </div>
 
-<div>
-    <h3 href="">Genova</h3>
-<!--<h3 *ngIf="City.sunrise != null">{{City.sunrise}}</h3>-->
+<!-- card per il tempo a genova mare -->
+<div class="card" style="width: 18rem;">
+    <br />
+    <h5 class="card-title">Genova</h5>
+    <img src="assets\genova.jpg"  alt="immagine Genova">
+    <div class="card-body">
+        <p class="card-text">Vuoi sapere che tempo fa al mare?</p>
+        <button class="btncolo" [routerLink]="'dettaglio/44.409452/8.967002'">Clicca per il mare!</button>
+    </div>
+</div>
 </div>
 
-<div>
-    <h3 href="">Torino</h3>
-<!--<h3 *ngIf="City.sunrise != null">{{City.sunrise}}</h3>-->
-</div>
 
-<div *ngFor="let show of shows">
-    <br>
-    <a [routerLink]="'/home/dettaglio/'+ show.show.id">{{show.show.id}} </a>
-</div>
