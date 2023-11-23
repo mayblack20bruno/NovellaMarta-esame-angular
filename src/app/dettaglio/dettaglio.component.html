@@ -1,4 +1,3 @@
-
 <h1 class="titolodettaglio text-center">Meteo {{ lat }} - {{ lon }}</h1>
 <br>
 <div class="bottoneinalto w-100 d-flex justify-content-center">
@@ -6,17 +5,13 @@
 </div>
 
 <div class="w-100 d-flex justify-content-center">
-  
+
   <!--card per l'alba-->
   <div class="imagininealbatram card col-4">
     <h2>Alba</h2>
     <div class="imagininealbatram">
-    <img 
-      src="assets/sunrise.png"
-      class="card-img"
-      alt="Sunrise image"
-    />
-  </div>
+      <img src="assets/sunrise.png" class="card-img" alt="Sunrise image" />
+    </div>
     <div class="card-body">
       <h5 class="card-title">Alba: {{ sunRS.sunrise }}</h5>
     </div>
@@ -27,12 +22,8 @@
   <div class="imagininealbatram colorecarddettaglio card col-4">
     <h2>Tramonto</h2>
     <div class="imagininealbatram">
-    <img 
-      src="assets/sunset.png"
-      class="card-img"
-      alt="Sunset image"
-    />
-  </div>
+      <img src="assets/sunset.png" class="card-img" alt="Sunset image" />
+    </div>
     <div class="card-body">
       <h5 class="card-title">Tramonto: {{ sunRS.sunset }}</h5>
     </div>

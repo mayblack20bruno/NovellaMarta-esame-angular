@@ -28,10 +28,11 @@ export class DettaglioComponent implements OnInit {
         .subscribe((response) => {
           this.sunRS = response;
         });
-        this.cityService.getDettagliMeteo(this.lat, this.lon).subscribe((response) => {
+      this.cityService
+        .getDettagliMeteo(this.lat, this.lon)
+        .subscribe((response) => {
           this.dettagliMeteo = response;
-        })
+        });
     });
-    
   }
 }

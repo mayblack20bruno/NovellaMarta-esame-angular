@@ -1,6 +1,6 @@
 <nav>
     <h1 class="titolo text-center">Meteo da tutto il Mondo</h1>
-</nav>  
+</nav>
 
 <br>
 
@@ -11,7 +11,7 @@
                 <div>
                     <h4 class="titoloLatLong">Latitudine</h4>
                 </div>
-                
+
                 <input class="cardcolo" [(ngModel)]="lat" name="lat" id="search" type="number" placeholder="Latitudine"
                     required />
             </div>
@@ -35,38 +35,41 @@
 <!-- card per il tempo a limone montagna -->
 <div class="w-100 d-flex justify-content-center">
 
-<!-- card per il tempo a cannes mare -->
-<div class="card" style="width: 18rem;">
-    <br />
-    <h5 class="card-title-città">Cannes</h5>
-    <img src="assets\cannes.jpg"  alt="immagine Genova">
-    <div class="card-body">
-        <p class="card-text">Cannes, tra le sue stradine pittoresche e la maestosa bellezza del mare, mostra il suo sorriso intriso di storia.</p>
-        <button class="btncolo" [routerLink]="'dettaglio/43.540250/7.036145'">Clicca per il mare!</button>
+    <!-- card per il tempo a cannes mare -->
+    <div class="card" style="width: 18rem;">
+        <br />
+        <h5 class="card-title-città">Cannes</h5>
+        <img src="assets\cannes.jpg" alt="immagine Genova">
+        <div class="card-body">
+            <p class="card-text">Cannes, tra le sue stradine pittoresche e la maestosa bellezza del mare, mostra il suo
+                sorriso intriso di storia.</p>
+            <button class="btncolo" [routerLink]="'dettaglio/43.540250/7.036145'">Clicca per il mare!</button>
+        </div>
     </div>
-</div>
 
 
-<div class="card" style="width: 18rem;">
-    <br />
-    <h5 class="card-title-città">Limone</h5>
-    <img src="assets\limone.jpg" alt="immagine Limone">
-    <div class="limonepied card-body">
-        <p class="card-text">Limone Piemonte, tra i suoi caratteristici vicoli e l'aria frizzante delle montagne, esibisce il suo sorriso.</p>
-        <button class="btncolo" [routerLink]="'dettaglio/44.204481/7.576225'">Clicca qui per sciare!</button>
+    <div class="card" style="width: 18rem;">
+        <br />
+        <h5 class="card-title-città">Limone</h5>
+        <img src="assets\limone.jpg" alt="immagine Limone">
+        <div class="limonepied card-body">
+            <p class="card-text">Limone Piemonte, tra i suoi caratteristici vicoli e l'aria frizzante delle montagne,
+                esibisce il suo sorriso.</p>
+            <button class="btncolo" [routerLink]="'dettaglio/44.204481/7.576225'">Clicca qui per sciare!</button>
+        </div>
     </div>
-</div>
 
-<!-- card per il tempo a genova mare -->
-<div class="card" style="width: 18rem;">
-    <br />
-    <h5 class="card-title-città">Genova</h5>
-    <img src="assets\genova.jpg"  alt="immagine Genova">
-    <div class="card-body">
-        <p class="card-text">Genova, tra carruggi e mare, sfoggia il suo sorriso pestato di storia e profumato di focaccia e tradizione.</p>
-        <button class="btncolo" [routerLink]="'dettaglio/44.409452/8.967002'">Clicca per il mare!</button>
+    <!-- card per il tempo a genova mare -->
+    <div class="card" style="width: 18rem;">
+        <br />
+        <h5 class="card-title-città">Genova</h5>
+        <img src="assets\genova.jpg" alt="immagine Genova">
+        <div class="card-body">
+            <p class="card-text">Genova, tra carruggi e mare, sfoggia il suo sorriso pestato di storia e profumato di
+                focaccia e tradizione.</p>
+            <button class="btncolo" [routerLink]="'dettaglio/44.409452/8.967002'">Clicca per il mare!</button>
+        </div>
     </div>
-</div>
 
 
 </div>
