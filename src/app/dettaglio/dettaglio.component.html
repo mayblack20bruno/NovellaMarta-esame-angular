@@ -1,12 +1,15 @@
+<!-- Intestazione -->
 <h1 class="titolodettaglio text-center">Meteo {{ lat }} - {{ lon }}</h1>
-<br>
+
+<br />
+
+<!-- Bottone di ritorno alla home -->
 <div class="bottoneinalto w-100 d-flex justify-content-center">
   <button class="btncolo" [routerLink]="''">Torna alla home</button>
 </div>
 
 <div class="w-100 d-flex justify-content-center">
-
-  <!--card per l'alba-->
+  <!-- Card per ricere info per l'alba -->
   <div class="imagininealbatram card col-4">
     <h2>Alba</h2>
     <div class="imagininealbatram">
@@ -17,8 +20,7 @@
     </div>
   </div>
 
-  <!--card per il tramonto-->
-
+  <!-- Card per ricere info per il tramonto -->
   <div class="imagininealbatram colorecarddettaglio card col-4">
     <h2>Tramonto</h2>
     <div class="imagininealbatram">
@@ -32,11 +34,12 @@
 
 <br />
 
-<!-- table -->
+<!-- Tabella per inserire informazioni in più -->
 <div class="text-center w-100 d-flex justify-content-center">
   <div class="d-flex justify-content-center card col-9">
     <table class="cardcolo w-100">
       <tr>
+        <!-- Titoli informazioni tabella  -->
         <th>
           <h4>Timepoint</h4>
         </th>
@@ -48,6 +51,7 @@
         </th>
       </tr>
 
+      <!-- Informazioni tabella  -->
       <tr *ngFor="let dettaglioMeteo of dettagliMeteo">
         <td>
           <h3>{{ dettaglioMeteo.timepoint }}</h3>
@@ -63,6 +67,7 @@
   </div>
 </div>
 
+<!-- Bottone di ritorno alla home -->
 <div class="bottoneinbasso w-100 d-flex justify-content-center">
   <button class="btncolo" [routerLink]="''">Torna alla home</button>
 </div>

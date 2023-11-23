@@ -3,12 +3,10 @@ import { HttpClient } from '@angular/common/http';
 import { map } from 'rxjs';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
-
 export class ApiService {
-
-  constructor(private http: HttpClient) { }
+  constructor(private http: HttpClient) {}
   sunriseSunset(latitude: string, longitude: string) {
     const baseUrl = 'https://api.sunrisesunset.io/json';
     const url = `${baseUrl}?lat=${latitude}&lng=${longitude}`;
@@ -16,10 +14,12 @@ export class ApiService {
   }
 
   dettagliMeteo(latitudine: string, longitude: string) {
-    const baseUrl = "https://www.7timer.info/bin/astro.php?lon=" + longitude + "&lat= " + latitudine + "&ac=0&unit=metric&output=json&tzshift=0";
+    const baseUrl =
+      'https://www.7timer.info/bin/astro.php?lon=' +
+      longitude +
+      '&lat= ' +
+      latitudine +
+      '&ac=0&unit=metric&output=json&tzshift=0';
     return this.http.get(baseUrl);
   }
-
-
-
 }
