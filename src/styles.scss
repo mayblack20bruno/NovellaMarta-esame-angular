@@ -1,7 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
-body {
-  background-color: rgb(253, 184, 184);
-  color: rgb(255, 255, 255);
+nav{
+  background-color: lightcoral;
 }
 
 .bottoneinbasso{
@@ -29,7 +28,15 @@ h2{
 }
 
 .titolo{
-  color: rgb(255, 118, 140);
+  color: rgb(252, 233, 236);
+  padding-bottom: 15px;
+  padding-top: 10px;
+}
+
+.titolodettaglio{
+  color: rgb(246, 88, 88);
+  padding-bottom: 15px;
+  padding-top: 10px;
 }
 
 .btncoloprimary{
@@ -43,4 +50,23 @@ h2{
   margin-top: -10px;
 }
 
+
+.imagininealbatram{
+  width:80px;
+  align-items: center;
+}
+
+.colorecarddettaglio{
+  background-color:bisque ;
+}
+
+.btn{
+  align-items: center;
+}
+
+
+.titoloLatLong{
+  margin-left: 35px;
+  margin-top:7px;
+}
 
