@@ -1,5 +1,7 @@
 <!-- Intestazione -->
-<h1 class="titolodettaglio text-center">Meteo {{ lat }} - {{ lon }}</h1>
+<nav>
+  <h1 class="titolo text-center">Meteo {{ lat }} - {{ lon }}</h1>
+</nav>
 
 <br />
 
@@ -21,7 +23,7 @@
   </div>
 
   <!-- Card per ricere info per il tramonto -->
-  <div class="imagininealbatram colorecarddettaglio card col-4">
+  <div class=" imagininealbatram colorecarddettaglio card col-4">
     <h2>Tramonto</h2>
     <div class="imagininealbatram">
       <img src="assets/sunset.png" class="card-img" alt="Sunset image" />
@@ -71,3 +73,4 @@
 <div class="bottoneinbasso w-100 d-flex justify-content-center">
   <button class="btncolo" [routerLink]="''">Torna alla home</button>
 </div>
+
